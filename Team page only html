@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+    <h1>Meet the team</h1>
+    <br />
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="img1.jpg" alt="Xavier" style="width:100%">
+                <div class="container">
+                    <h2>Xavier Godmaire</h2>
+                    <p class="title">Co-Founder</p>
+                    <p><button class="button">Linkedin</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="img1.jpg" alt="Christian" style="width:100%">
+                <div class="container">
+                    <h2>Christian N’guessan-ble</h2>
+                    <p class="title">Co-Founder</p>
+                    <p><button class="button">Linkedin</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="img1.jpg" alt="Karen" style="width:100%">
+                <div class="container">
+                    <h2>Karen Chan Kwong Lun</h2>
+                    <p class="title">Co-Founder</p>
+                    <p><button class="button">Linkedin</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="img1.jpg" alt="Javisen" style="width:100%">
+                <div class="container">
+                    <h2>Javisen Katherasa Pillay</h2>
+                    <p class="title">Co-Founder</p>
+                    <p><button class="button">Linkedin</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="img1.jpg" alt="Chenliwei Zhou" style="width:100%">
+                <div class="container">
+                    <h2>Chenliwei Zhou</h2>
+                    <p class="title">Co-Founder</p>
+                    <p><button class="button">Linkedin</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
