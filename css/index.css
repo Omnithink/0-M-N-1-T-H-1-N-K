@@ -36,14 +36,11 @@ header{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(8px);
     background-color: #02050f
-
 }
 
 nav li{
     display: inline-block;
     padding: 0px 20px;
-    
-
 }
 
 nav li a{
@@ -55,9 +52,42 @@ nav li a:hover{
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
+.button{
+    padding: 9px 35px;
+    background-color: rgb(58, 64, 148);
+    border: none;
+    border-radius: 50px;
+    border-width: 100px;
+    border-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.button{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white
+}
+.button:hover{
+    color: black;
+    background-color: rgb(58, 101, 141) ;
+}
 /*nav bar end*/
 
 /*content start*/
 .content{
-    background-color: #02050f
+    height: 200vh;
+    background-color:rgb(14, 15, 20);
+    margin: 0;
+    padding: 0;
 }
+
+.animated-banner{
+    text-align: center;
+    position: center;
+    color: white;
+    font-family: 'heimdal', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
