@@ -5,16 +5,51 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: #02050f
 }
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&display=swap');
 
-body{
-    background-color: #02050f
-}
+
 .logo{
-    width: 1cm;
-    height: 1cm;
+    width: 2cm;
+    height: 2cm;
+    cursor: pointer;
 }
+
+li, a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(8px);
+
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+nav li a{
+    transition: all 0.3s ease 0s;
+}
+nav li a:hover{
+    color:rgb(114, 150, 230);
+    border-bottom: 3px solid white; 
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
