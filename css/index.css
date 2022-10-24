@@ -143,4 +143,13 @@ nav li a:hover{
     background-image: url(../Images/index/ezgif-1-16e3d64ce8.gif);
 
 }
+
+/* flipper*/
+
+.flipper-1{
+    opacity: 1
+}
+.flipper-2{
+    opacity: 0;
+}
 /*content end*/
