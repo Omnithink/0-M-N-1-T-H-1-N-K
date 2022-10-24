@@ -9,27 +9,43 @@
 </head>
 <body>
     <header>
-        <img class="logo" src="../Images/index/Logo design simple.png" alt="OmniThink logo">
-
-        <a class="button" href="../html/pricing.html">Start imagining</a>
+        <img class="logo-nav" src="../Images/index/Logo design simple.png" alt="OmniThink logo">
+        <a class="button" href="./html/pricing.html">Start imagining</a>
     </header>
-    <h3>Let's take it from the top..</h3>
-    <h2>What is our mission ?</h2>
-    <p>Making dreams come true is the name of the game. We here at OmniCorp are striving and making strides in AI technologies in order to create a user experience never yet conceived.</h3>
-    <h2>How do we do it ?</h2>
-    <p>Our company provides a powerful AI proficient in multiple commonly used programming languages, with the express goal of providing AI assistance, for the most minute of tasks to the greatest challenges humanity has ever faced.</p>
-    <h2>Our AI</h2>
-    <p>A machine learning algorithm that knows Python, HTML, CSS, Javascript, C, C#, C++, and many more programming languages. Using it you may:</p>
-    <ul>
-        <li>Automate your professional tasks</li>
-        <li>Learn for yourself how to code</li>
-        <li>Troubleshoot your work</li>
-    </ul>
-    <p>Do not be afraid to get creative. This is the future and much more, just behind your computer screen.</p>
-    <p>Eager to try it out ?</p>
-    <p>Check out a demo of the AI</p>
-    <p>or</p>
-    <p>Get to experience the full extent of our design here</p>
+
+    <script src="./js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("header").addClass("covered");
+            }
+            else{
+                $("header").removeClass("covered");
+            }
+        });
+    
+    </script>
+    <div class="content">
+        <h3>Let's take it from the top..</h3>
+        <h2>What is our mission ?</h2>
+        <p>Making dreams come true is the name of the game. We here at OmniCorp are striving and making strides in AI technologies in order to create a user experience never yet conceived.</h3>
+        <h2>How do we do it ?</h2>
+        <p>Our company provides a powerful AI proficient in multiple commonly used programming languages, with the express goal of providing AI assistance, for the most minute of tasks to the greatest challenges humanity has ever faced.</p>
+        <h2>Our AI</h2>
+        <p>A machine learning algorithm that knows Python, HTML, CSS, Javascript, C, C#, C++, and many more programming languages. Using it you may:</p>
+        <ul>
+            <li>Automate your professional tasks</li>
+            <li>Learn for yourself how to code</li>
+            <li>Troubleshoot your work</li>
+        </ul>
+        <p>Do not be afraid to get creative. This is the future and much more, just behind your computer screen.</p>
+        <p>Eager to try it out ?</p>
+        <p>Check out a demo of the AI</p>
+        <p>or</p>
+        <p>Get to experience the full extent of our design here</p>
+    </div>
+
     
 </body>
 </html>

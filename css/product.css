@@ -3,6 +3,7 @@
 }
 
 *{
+    background-color: rgb(14, 15, 20);
     margin: 0;
     padding: 0;
 
@@ -13,7 +14,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&display=swap');
 
 /* nav bar start*/
-.logo{
+.logo-nav{
     width: 4cm;
     height: 4cm;
     margin-right: auto;
@@ -26,24 +27,26 @@ nav li a {
     color: white;
     text-decoration: none;
     list-style-type: none;
+    transition: all 0.3s ease 0s;
 }
 
 header{
+    position: fixed;
+    width: 100%;
+    height: 80px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 4px 10%;
-    background-color: #02050f
+    z-index: 2;
 }
 
 nav li{
     display: inline-block;
     padding: 0px 20px;
+    overflow: hidden;
 }
 
-nav li a{
-    transition: all 0.3s ease 0s;
-}
 nav li a:hover{
     color:rgb(114, 150, 230);
     border-bottom: 3px solid white; 
@@ -71,3 +74,10 @@ nav li a:hover{
     background-color: rgb(58, 101, 141) ;
 }
 /*nav bar end*/
+
+/*content start*/
+.content{
+    font-family: 'roboto', sans-serif;
+    padding-top: 130px;
+    color: white;
+}

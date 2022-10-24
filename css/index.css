@@ -142,10 +142,7 @@ header.covered{
 }
 
 .animated-banner{
-    position: relative;
     height: 990px;
-    text-align: center;
-    position: center;
     color: white;
     font-family: 'heimdal', sans-serif;
     font-weight: bold;
