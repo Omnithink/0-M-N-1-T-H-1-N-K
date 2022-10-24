@@ -35,7 +35,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 4px 10%;
-    z-index: 9998;
+    z-index: 2;
 }
 
 nav li{
@@ -72,48 +72,46 @@ nav li a:hover{
 /*nav bar end*/
 
 /* splash screen start*/
-.splash-wrapper{
+.intro{
     position: fixed;
-    z-index: 9999;
-    background-color: rgb(2, 1, 12);
-    height: 100vh;
+    z-index: 3;
+    left: 0;
+    top: 0;
     width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    animation-name: slideOut;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
-    animation-delay: 3s;
+    height: 100vh;
+    background-color: rgb(9, 5, 19);
+    transition: 1s;
+}
 
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
 }
 
 .logo{
-    width: 10cm;
+    
+    position: relative;
+    display: inline-block;
+    bottom: -50px;
+    opacity: 0;
+}
+.logo img{
     height: 10cm;
-    opacity : 0;
-    animation-name: slideUp;
-    animation-fill-mode: forwards;
-    animation-duration: 2s;
-    animation-delay: 2;
-
-
 }
 
-@keyframes slideUp{
-    from {opacity: 0}
-    to {opacity: 1}
+.logo.active{
+    bottom: -30px;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
 }
 
-@keyframes slideOut{
-    from {bottom: 0}
-    to {bottom: 150vh}
-
-}
-
-.checkbox{
-    display: none;
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
 }
 /*splash screen end*/
 
