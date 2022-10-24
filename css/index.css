@@ -120,7 +120,7 @@ nav li a:hover{
 /* Scroll shrink*/
 header{
     width: 100%;
-    transition: 1s;
+    transition: 0.5s;
     width: 100%;
     overflow: hidden;
 
@@ -142,6 +142,8 @@ header.covered{
 }
 
 .animated-banner{
+    position: relative;
+    height: 990px;
     text-align: center;
     position: center;
     color: white;
@@ -149,15 +151,44 @@ header.covered{
     font-weight: bold;
     font-size: 50px;
     background-image: url(../Images/index/ezgif-1-16e3d64ce8.gif);
+    background-size: cover;
 
+}
+
+.banner-text-1{
+    animation: slideUp1 1s ease-in-out 0.5s;
+    animation-delay:2s;
+
+}
+.banner-text-2{
+    animation: slideUp1 1s ease-in-out 0.5s;
+    animation-delay:2.3s;
+
+}
+
+.flipper{
+    animation: slideUp1 1s ease-in-out 0.5s;
+    animation-delay:2.5s;
+
+}
+
+
+@keyframes slideUp1{
+    0% {
+        opacity: 0.2;
+        line-height: 500px;
+    }
+    100%{
+        opacity: 1;
+        line-height: 100px;
+    }
+}
+
+.banner-text-1{
+    padding-top: 400px;
+    margin: 0;
 }
 
 /* flipper*/
 
-.flipper-1{
-    opacity: 1
-}
-.flipper-2{
-    opacity: 0;
-}
 /*content end*/
