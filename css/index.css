@@ -159,14 +159,16 @@ header.covered{
     animation: slideUp1 1s ease-in-out 0.5s;
     animation-delay:2s;
 
+
 }
 .banner-text-2{
     animation: slideUp1 1s ease-in-out 0.5s;
     animation-delay:2.3s;
 
+
 }
 
-.flipper{
+.banner-text-3{
     animation: slideUp1 1s ease-in-out 0.5s;
     animation-delay:2.5s;
 
@@ -189,6 +191,13 @@ header.covered{
     margin: 0;
 }
 
-/* flipper*/
+/*flipper start*/
+.typewrite{
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke: 5px rgb(114, 150, 230);
+}
+
+/*flipper end*/
 
 /*content end*/
