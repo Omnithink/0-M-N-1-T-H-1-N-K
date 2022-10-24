@@ -25,14 +25,17 @@ nav li a {
     color: white;
     text-decoration: none;
     list-style-type: none;
+    transition: all 0.3s ease 0s;
 }
 
 header{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 4px 10%;
-    background-color: #02050f
+    z-index: 9998;
 }
 
 nav li{
@@ -40,9 +43,6 @@ nav li{
     padding: 0px 20px;
 }
 
-nav li a{
-    transition: all 0.3s ease 0s;
-}
 nav li a:hover{
     color:rgb(114, 150, 230);
     border-bottom: 3px solid white; 
@@ -75,7 +75,7 @@ nav li a:hover{
 .splash-wrapper{
     position: fixed;
     z-index: 9999;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(2, 1, 12);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -87,8 +87,6 @@ nav li a:hover{
     animation-duration: 2s;
     animation-delay: 3s;
 
-
-
 }
 
 .logo{
@@ -99,6 +97,8 @@ nav li a:hover{
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 2;
+
+
 }
 
 @keyframes slideUp{
@@ -117,14 +117,21 @@ nav li a:hover{
 }
 /*splash screen end*/
 
+/* Scroll shrink*/
+.banner.sticky{
+    padding: 5 px 100x;
+    background: white;
+}
+/*Scroll shrink end*/
+
 /*content start*/
 .content{
     height: 200vh;
     background-color:rgb(14, 15, 20);
     margin: 0;
     padding: 0;
-}
 
+}
 
 .animated-banner{
     text-align: center;
@@ -132,6 +139,8 @@ nav li a:hover{
     color: white;
     font-family: 'heimdal', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 50px;
+    background-image: url(../Images/index/ezgif-1-16e3d64ce8.gif);
+
 }
 /*content end*/
