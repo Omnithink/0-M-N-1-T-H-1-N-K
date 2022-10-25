@@ -61,7 +61,7 @@ nav li a:hover{
 }
 .button{
     padding: 9px 35px;
-    background-color: rgb(58, 64, 148);
+    background-color: rgb(114, 150, 230);
     border: none;
     border-radius: 50px;
     border-width: 100px;
@@ -78,7 +78,7 @@ nav li a:hover{
 }
 .button:hover{
     color: black;
-    background-color: rgb(58, 101, 141) ;
+    background-color: rgb(74, 115, 202) ;
 }
 /*nav bar end*/
 
