@@ -13,10 +13,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* nav bar start*/
 .logo-nav{
-    width: 4cm;
-    height: 4cm;
+    color: rgb(255, 255, 255);
+    font-family: 'heimdal', sans-serif;
     margin-right: auto;
     cursor: pointer;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.logo-nav:hover{
+    color: goldenrod;
 }
 
 nav li a {
@@ -25,6 +31,7 @@ nav li a {
     color: white;
     text-decoration: none;
     list-style-type: none;
+    font-size: 15px;
     transition: all 0.3s ease 0s;
 }
 
@@ -43,6 +50,7 @@ nav li{
     display: inline-block;
     padding: 0px 20px;
     overflow: hidden;
+
 }
 
 nav li a:hover{
@@ -65,6 +73,7 @@ nav li a:hover{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    font-size: 15px;
     color: white
 }
 .button:hover{
@@ -119,6 +128,7 @@ nav li a:hover{
 
 /* Scroll shrink*/
 header{
+    align-items: center;
     width: 100%;
     transition: 0.5s;
     width: 100%;
@@ -143,6 +153,7 @@ header.covered{
 
 .animated-banner{
     position: relative;
+    text-align: center;
     height: 990px;
     text-align: center;
     position: center;
@@ -150,7 +161,7 @@ header.covered{
     font-family: 'Heimdal', sans-serif;
     font-weight: bold;
     font-size: 50px;
-    background-image: url(../Images/index/ezgif-1-16e3d64ce8.gif);
+    background-image: url(../Images/index/index-banner-background.gif);
     background-size: cover;
 
 }
