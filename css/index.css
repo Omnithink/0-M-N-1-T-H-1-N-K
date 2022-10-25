@@ -25,6 +25,10 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: "CustomFont";
+    src: url(../fonts/Heimdal.ttf);
+}
 /* nav bar start*/
 .logo-nav{
     color: rgb(255, 255, 255);
