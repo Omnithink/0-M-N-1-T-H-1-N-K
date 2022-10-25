@@ -115,7 +115,7 @@ header.covered{
     margin-top: 120px;
     height: 500px;
     position: relative;
-    margin-left: 400px;
+    margin-left: 300px;
     top: 220px;
 
 }
@@ -134,9 +134,8 @@ header.covered{
     z-index: 3;
 }
 
-
-
 /*image board end*/
+
 .banner-button{
     padding: 9px 35px;
     background-color: rgb(114, 150, 230);
@@ -159,3 +158,5 @@ header.covered{
     color: black;
     background-color: rgb(74, 115, 202) ;
 }
+
+/*Content text start*/
