@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script> 
+
+    <script type = "text/javascript">
+        $(document).ready(function(){
+        var div = $("#divToShowHide");
+        //Take the current position (vertical position from top) of your div in the variable
+        var pos = div.position();
+        //Now when scroll event trigger do following
+        $(window).scroll(function () {
+        var windowpos = $(window).scrollTop();
+        //Now if you scroll more than 100 pixels vertically change the class to AfterScroll
+        // I am taking 100px scroll, you can take whatever you need
+        if (windowpos >= (pos.top - 100)) {
+            div.addClass("AfterScroll");
+        }
+        //If scroll is less than 100px, remove the class AfterScroll so that your content will be hidden again 
+        //Note: If you want the content should be shown always once you scroll and do not want to hide it again when go to top agian, no need to write the else part
+        });
+        });
+    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,22 +46,25 @@
     
     </script>
     <div class="content">
-        <div class="main-banner">
-            <h1>What is OmniThink ?</h1>
-            <br>
-            <br>
-            <p>A powerful machine learning algorithm that is trained in various programming languages.</p>
-            <br>
-            <br>
-            <a href="./pricing.html" class="banner-button">Get started with a demo</a> or <a href="./pricing.html " class="banner-button">Get the full experience</a>
-            <div class="image-board">
-                 <img class="img-board" src="../Images/product/image board.png" alt="image-board">
+        <div class="top">
+            <div class="main-banner">
+                <h1>What is OmniThink ?</h1>
+                <br>
+                <br>
+                <p>A powerful machine learning algorithm that is trained in various programming languages.</p>
+                <br>
+                <br>
+                <a href="./pricing.html" class="banner-button">Get started with a demo</a> or <a href="./pricing.html " class="banner-button">Get the full experience</a>
+                <div class="image-board">
+                     <img class="img-board" src="../Images/product/image board.png" alt="image-board">
+                </div>
             </div>
         </div>
+        
 
         <div class="content-developpement">
-            <div class="first-line">
-                <h3>Let's take it from the top..</h3>
+            <div id = "divToShowHide" class = "BeforeScroll">
+                <h3 class="first-line">Let's take it from the top..</h3>
             </div>
 
             <div class="our-mission">
