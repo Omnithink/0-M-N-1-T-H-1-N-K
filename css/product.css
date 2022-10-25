@@ -25,6 +25,10 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+    font-family: "CustomFont";
+    src: url(../fonts/Heimdal.ttf);
+}
 /* nav bar start*/
 .logo-nav{
     color: rgb(255, 255, 255);
@@ -58,7 +62,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 4px 10%;
-    z-index: 2;
+    z-index: 10;
 }
 
 nav li{
@@ -74,27 +78,7 @@ nav li a:hover{
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-.button{
-    padding: 9px 35px;
-    background-color: rgb(114, 150, 230);
-    border: none;
-    border-radius: 50px;
-    border-width: 100px;
-    border-color: black;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-.button{
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    color: white
-}
-.button:hover{
-    color: black;
-    background-color: rgb(74, 115, 202) ;
-}
+
 /*nav bar end*/
 
 
@@ -117,10 +101,11 @@ header.covered{
 /*content start*/
 .content{
     position: absolute;
+    width: 100%;
     font-family: 'roboto', sans-serif;
     color: white;
     height: 200vh;
-    background-color:black;
+    background-color:rgb(167, 223, 167);
     margin: 0;
     padding: 0;
 
@@ -128,4 +113,49 @@ header.covered{
 
 .main-banner{
     margin-top: 120px;
+    height: 500px;
+    position: relative;
+    margin-left: 400px;
+    top: 220px;
+
+}
+/*image board start*/
+.image-board{
+    height: 450px;
+    width: 450px;
+    margin-left: 700px;
+    margin-top: -320px;
+}
+
+.img-board{
+    height: 450px;
+    width: 600px;
+    margin-left: 10px;
+    z-index: 3;
+}
+
+
+
+/*image board end*/
+.banner-button{
+    padding: 9px 35px;
+    background-color: rgb(114, 150, 230);
+    border: none;
+    border-radius: 50px;
+    border-width: 100px;
+    border-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.banner-button{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    margin: 30px;
+}
+.banner-button:hover{
+    color: black;
+    background-color: rgb(74, 115, 202) ;
 }
