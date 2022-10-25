@@ -159,15 +159,4 @@ header.covered{
     background-color: rgb(74, 115, 202) ;
 }
 
-/*Content text formatting start*/
-
-.content-developpement{
-    margin-top: 100px;
-}
-/*Use this class when you want your content to be shown after some scroll*/
-.AfterScroll
-{
-  height: 100px; /*Whatever you want*/
-  width: 100%; /*Whatever you want*/
-  display: block;
-}
+/*Content text start*/
