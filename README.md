@@ -1,8 +1,11 @@
 # Group 23 : OmniThink
 
-Concept : A machine learning algorithm that produces code upon user request 
-GitHub Organiazatin link : https://github.com/Omnithink
+Concept : A machine learning algorithm that produces code upon user request
+
+GitHub Organiazation link : https://github.com/Omnithink
+
 GitHub repo link : https://github.com/Omnithink/0-M-N-1-T-H-1-N-K
+
 Organazation README file link : https://github.com/Omnithink/0-M-N-1-T-H-1-N-K/blob/main/README.md
 
 Contributors 
