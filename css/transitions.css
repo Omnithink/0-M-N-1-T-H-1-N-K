@@ -1,0 +1,14 @@
+.transition-a {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 100%;
+    z-index: 101;
+    background-color: rgb(19, 19, 22);
+    transition: 0.5s ease-out;
+}
+
+.transition-a.is-active {
+    bottom: 0px;
+}
