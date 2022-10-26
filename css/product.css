@@ -141,29 +141,6 @@
     font-size: 60px;
   }
   
-  /*image board start*/
-  .image-board{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    border: solid;
-    height: 450px;
-    width: 450px;
-    /*margin-left: 700px;
-    margin-top: -340px;*/
-  }
-  
-  .img-board{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    border: solid;
-    height: 450px;
-    z-index: 3;
-  }
-  
-  /*image board end*/
-  
   .banner-button{
     padding: 9px 35px;
     background-color: rgb(114, 150, 230);
@@ -193,7 +170,6 @@
   
  .content-nav{
     display: flex;
-    border: solid;
     height: 60px;
     width: 100%;
     justify-content: center;
@@ -215,7 +191,7 @@
  .arrow {
   height: 50px;
   width: 50px;
-  cursor: pointer;
+
   opacity: 0;
   position: absolute;
   margin-top: 40%;

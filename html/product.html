@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="../css/product.css">
     <link rel="stylesheet" href="../css/transitions.css">
     <link rel="icon" href="Images/index/android-chrome-512x512.png">
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
     <title>OmniThink | Product</title>
 </head>
 <body>
+    <div class="smooth-scroll-wrapper">
+        
+    </div>
     <!--Transition element-->
     <div class="transition transition-2 is-active"></div>
     <script src="../js/transition.js"></script>
@@ -36,6 +44,7 @@
             });
         
         </script>
+
         <div class="content-top">
             <div class="main-banner">
                 <h1>What is OmniThink ?</h1>
@@ -50,15 +59,15 @@
                     <a href="./pricing.html" class="banner-button">Get started with a demo</a> or <a href="./pricing.html " class="banner-button">Get the full experience</a>
                 </div>
                 <!--DownArrow-->
-                <div class="arrow arrow-first"></div>
-                <div class="arrow arrow-second"></div>
+                <div class="arrow arrow-first"><a href="#content"></a></div>
+                <div class="arrow arrow-second"><a href="#content"></a></div>
 
 
             </div>
         </div>
     </div>
 
-    <div class="content">
+    <div class="content" id="content">
         <div class="content-developpement">
             <div class="content-nav">
                 <ul class="content-nav-list">
@@ -97,5 +106,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
