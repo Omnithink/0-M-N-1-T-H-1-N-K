@@ -91,7 +91,7 @@ window.onload = () => {
 
         setInterval(() => {
           window.location.href = target;
-        }, 500);
+        }, 1000);
       })
     }
     var elements = document.getElementsByClassName('typewrite');
