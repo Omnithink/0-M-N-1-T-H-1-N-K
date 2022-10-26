@@ -29,6 +29,12 @@ html {
     font-family: "Heimdal";
     src: url(../fonts/Heimdal.ttf) format('truetype');
 }
+
+/*Site exit animation start*/ 
+
+
+/*Site exit animation end*/ 
+
 /* nav bar start*/
 .logo-nav{
     color: rgb(255, 255, 255);
