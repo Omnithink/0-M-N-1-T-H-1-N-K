@@ -87,7 +87,6 @@
     align-items: center;
     width: 100%;
     transition: 0.5s;
-    width: 100%;
     overflow: hidden;
   
   }
@@ -102,32 +101,40 @@
   .content{
     position: absolute;
     width: 100%;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: white;
     height: 200vh;
-    background-color:rgb(167, 223, 167);
+    background-color:rgb(12, 14, 12);
     margin: 0;
     padding: 0;
   
   }
   
-  .top{
-    position: relative;
-    width: 100%;
-    font-family: 'roboto', sans-serif;
+ .top{
+    background-color: rgb(1, 2, 20);
+    width: auto;
+    min-height: 700px;
+    
+ }
+ .content-top{
+    font-family: 'Raleway', sans-serif;
+    display: flex;
     color: white;
-    background-color:rgb(17, 26, 17);
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+    justify-content: center;
+    min-height: 580px;
+    align-items: center;
   }
-  
+
+
   .main-banner{
     margin-top: 150px;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    margin-left: 370px;
-    top: 130px;
+    justify-content: center;
+    align-items: center;
+    /*margin-left: 370px;
+    top: 130px;*/
   }
   
   .main-banner h1{
@@ -136,16 +143,22 @@
   
   /*image board start*/
   .image-board{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: solid;
     height: 450px;
     width: 450px;
-    margin-left: 700px;
-    margin-top: -340px;
+    /*margin-left: 700px;
+    margin-top: -340px;*/
   }
   
   .img-board{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    border: solid;
     height: 450px;
-    width: 600px;
-    margin-left: 10px;
     z-index: 3;
   }
   
@@ -167,7 +180,9 @@
     font-weight: bold;
     font-size: 15px;
     color: white;
-    margin: 30px;
+    padding-left: -10px;
+    margin: 24px;
+
   }
   .banner-button:hover{
     color: black;
