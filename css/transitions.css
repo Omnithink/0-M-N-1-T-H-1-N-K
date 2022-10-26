@@ -1,4 +1,4 @@
-.transition-a {
+.transition-1 {
     position: fixed;
     top: 0;
     left: 0;
@@ -9,6 +9,21 @@
     transition: 0.5s ease-out;
 }
 
-.transition-a.is-active {
+.transition-1.is-active {
+    bottom: 0px;
+}
+
+.transition-2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 100%;
+    z-index: 101;
+    background-color: rgb(19, 19, 22);
+    transition: 0.5s ease-out;
+}
+
+.transition-2.is-active {
     bottom: 0px;
 }
