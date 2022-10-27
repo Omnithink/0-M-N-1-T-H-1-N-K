@@ -9,6 +9,7 @@
   
   html {
     scroll-behavior: smooth;
+    background-color: rgb(1, 2, 20);
   }
   
   ::-webkit-scrollbar {
@@ -21,7 +22,7 @@
   }
   
   
-  /* fonts */
+  /* imports */
   @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -29,6 +30,9 @@
     font-family: "Heimdal";
     src: url(../fonts/Heimdal.ttf);
   }
+  @import url('https://unpkg.com/open-props');
+  @import url('https://unpkg.com/open-props/normalize.min.css');
+
   /* nav bar start*/
   .logo-nav{
     color: rgb(255, 255, 255);
@@ -100,14 +104,20 @@
   /*content start*/
   .content{
     position: absolute;
-    width: 100%;
+    inline-size: min(100%);
+    margin-inline: auto;
     font-family: 'Raleway', sans-serif;
     color: white;
-    height: 200vh;
+    height: 110vh;
     background-color:rgb(12, 14, 12);
     margin: 0;
     padding: 0;
+    
   
+  }
+
+  .content-nav{
+    scroll-margin-top: 80px;
   }
   
  .top{
@@ -133,36 +143,16 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    /*margin-left: 370px;
-    top: 130px;*/
+    
   }
   
   .main-banner h1{
     font-size: 60px;
   }
-  
-  /*image board start*/
-  .image-board{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    border: solid;
-    height: 450px;
-    width: 450px;
-    /*margin-left: 700px;
-    margin-top: -340px;*/
+
+  .buttons{
+    margin-left: -11px;
   }
-  
-  .img-board{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    border: solid;
-    height: 450px;
-    z-index: 3;
-  }
-  
-  /*image board end*/
   
   .banner-button{
     padding: 9px 35px;
@@ -181,7 +171,8 @@
     font-size: 15px;
     color: white;
     padding-left: -10px;
-    margin: 24px;
+    margin: 21px;
+    margin-left: 20px;
 
   }
   .banner-button:hover{
@@ -193,7 +184,6 @@
   
  .content-nav{
     display: flex;
-    border: solid;
     height: 60px;
     width: 100%;
     justify-content: center;
@@ -209,3 +199,85 @@
     transition: 0.5s;
  }
 
+ /*Arrow animation start*/
+ /*Credit to Joshua MacDonald*/
+ 
+ .arrow,
+.arrow:before{
+  position: absolute;
+  left: 50%;
+}
+
+.arrow{
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: 200px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
+}
+  
+.arrow:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+} 
+  
+  
+@keyframes arrow{
+  0%{
+    pacity: 1;
+  }
+  
+  100%{
+    opacity: 0;
+    transform: translate(-10px, -10px);
+  }
+ 
+}
+
+/*Arrow animation end*/
+
+/*Product description slide start*/
+/*Shoutout to Kevin Powell for hard carrying this project*/
+.container{
+  margin-top: 60px;
+}
+
+.media-scroller {
+  --_spacer: var(--size-3);
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 50px;
+  padding: 0 var(--_spacer) var(--_spacer);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.media-scroller--with-groups {
+  grid-auto-columns: 115vw;
+  
+}
+
+.media-group {
+  height: 90vh;
+  width: 100vw;
+  float: left;
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+  margin-top: 60px;
+}

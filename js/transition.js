@@ -1,5 +1,6 @@
 window.onload = () => {
-    const anchors = document.querySelectorAll('a');
+    const anchors = document.querySelectorAll('header, .banner-button');
+    
     const transition_el = document.querySelector('.transition');
   
     setTimeout(() => {
@@ -21,3 +22,4 @@ window.onload = () => {
       })
     }
   }
+
