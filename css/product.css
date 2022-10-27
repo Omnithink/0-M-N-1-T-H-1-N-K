@@ -107,6 +107,7 @@
     background-color:rgb(12, 14, 12);
     margin: 0;
     padding: 0;
+    scroll-margin-top: 80px;
   
   }
   
@@ -133,8 +134,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    /*margin-left: 370px;
-    top: 130px;*/
+    
   }
   
   .main-banner h1{
@@ -158,7 +158,8 @@
     font-size: 15px;
     color: white;
     padding-left: -10px;
-    margin: 24px;
+    margin: 21px;
+    margin-left: 20px;
 
   }
   .banner-button:hover{
@@ -186,61 +187,54 @@
  }
 
  /*Arrow animation start*/
- /*Credit to Tómas Thorvardarson*/
+ /*Credit to Joshua MacDonald*/
  
- .arrow {
-  height: 50px;
-  width: 50px;
-
-  opacity: 0;
+ .arrow,
+.arrow:before{
   position: absolute;
-  margin-top: 40%;
-  left: 53%;
-  top: 60%;
-  transform-origin: 50% 50%;
-  transform: translate3d(-50%, -50%, 0);
+  left: 50%;
 }
 
-.arrow-first {
-  animation: arrow-movement 2s ease-in-out infinite;
+.arrow{
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  margin: 200px 0 0 -20px;
+  -webkit-transform: rotate(45deg);
+  border-left: none;
+  border-top: none;
+  border-right: 2px #fff solid;
+  border-bottom: 2px #fff solid;
 }
+  
 
-.arrow-second {
-  animation: arrow-movement 2s 1s ease-in-out infinite;
-}
-
-.arrow:before,
-.arrow:after {
-  background: #fff;
-  content: "";
-  display: block;
-  height: 3px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30px;
-}
-
-.arrow:before {
-  transform: rotate(45deg) translateX(-23%);
-  transform-origin: top left;
-}
-
-.arrow:after {
-  transform: rotate(-45deg) translateX(23%);
-  transform-origin: top right;
-}
-
-@keyframes arrow-movement {
-  0% {
+  
+.arrow:before{
+  content: '';
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  border-left: none;
+  border-top: none;
+  border-right: 1px #fff solid;
+  border-bottom: 1px #fff solid;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: arrow;
+} 
+  
+  
+@keyframes arrow{
+  0%{
+    pacity: 1;
+  }
+  
+  100%{
     opacity: 0;
-    top: 45%;
+    transform: translate(-10px, -10px);
   }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+ 
 }
+
 /*Arrow animation end*/
