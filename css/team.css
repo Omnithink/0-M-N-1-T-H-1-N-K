@@ -9,21 +9,11 @@ html {
 }
 
 .column {
+    float:left;
     width: 20%;
     margin-bottom: 16px;
     padding: 0 8px;
     
-}
-.row {
-    float: left;
-    display: flex;
-
-}
-.column{
-    display: inline;
-    flex: 20%;
-    padding: 10px;
-
 }
 @media screen and (max-width: 200px) {
 .column {
