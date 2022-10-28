@@ -128,13 +128,18 @@
     
  }
  .content-top{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     color: white;
     justify-content: center;
     min-height: 580px;
     height: 100vh;
     align-items: center;
+  }
+
+  .content-top h1{
+    font-family: 'Heimdal', sans-serif;
+    font-size: 100px;
   }
 
 
