@@ -71,7 +71,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 4px 10%;
-    z-index: 10;
+    z-index: 20;
   }
   
   nav li{
@@ -121,7 +121,6 @@
   
   }
 
-
  .top{
     background-color: rgb(1, 2, 20);
     width: auto;
@@ -129,13 +128,18 @@
     
  }
  .content-top{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     color: white;
     justify-content: center;
     min-height: 580px;
     height: 100vh;
     align-items: center;
+  }
+
+  .content-top h1{
+    font-family: 'Heimdal', sans-serif;
+    font-size: 100px;
   }
 
 
@@ -146,15 +150,18 @@
     position: relative;
     justify-content: center;
     align-items: center;
+    z-index: 5;
     
   }
   
   .main-banner h1{
     font-size: 60px;
+    z-index: 5;
   }
 
   .buttons{
     margin-left: -11px;
+    z-index: 5;
   }
   
   .banner-button{
@@ -204,6 +211,7 @@
   border-top: none;
   border-right: 2px #fff solid;
   border-bottom: 2px #fff solid;
+  z-index: 5;
 }
   
 .arrow:before{
@@ -293,6 +301,7 @@
   height: 100vh;
   width: 100%;
   position: absolute;
+  z-index: 6;
 }
 
 .bottom h1{
