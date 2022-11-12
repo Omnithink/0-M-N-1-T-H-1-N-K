@@ -67,15 +67,14 @@ background-color: #555;
   height: 100%;
     
 }
+
 .contact {
     width: 100%;
-    display: inline-block;
-}
-
-
-
-.content {
-    display: table;
+    height:100px;
+    background-color: antiquewhite;
+    border: 15px black;
+    padding: 50px;
+    margin:20px;
 }
 
 .job {
