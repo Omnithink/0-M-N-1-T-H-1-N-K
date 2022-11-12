@@ -67,4 +67,29 @@ background-color: #555;
   height: 100%;
     
 }
+.contact {
+    width: 100%;
+    display: inline-block;
+}
 
+
+
+.content {
+    display: table;
+}
+
+.job {
+    border: none;
+    outline: 0;
+    display:block;
+    margin:auto;
+    padding: 8px;
+    color:purple;
+    background-color: grey;
+    text-align: center;
+    cursor: pointer;
+    width:20%;
+    transition: 0.5s;
+    }
+
+   
