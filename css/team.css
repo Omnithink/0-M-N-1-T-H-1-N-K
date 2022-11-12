@@ -30,13 +30,14 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 .title {
 color: gray;
 font-size: larger;
+text-align: center;
 }
 
 .button {
 border: none;
 outline: 0;
 display:block;
-margin:left;
+margin:auto;
 padding: 8px;
 color: white;
 background-color: purple;
