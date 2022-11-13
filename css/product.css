@@ -199,7 +199,7 @@
 .arrow{
   width: 40px;
   height: 40px;
-  top: 90%;
+  top: 110%;
   margin: 200px 0 0 -20px;
   -webkit-transform: rotate(45deg);
   border-left: none;
@@ -246,7 +246,7 @@
 .up-arrow,
 .up-arrow:before{
   position: absolute;
-  left: 50%;
+  left: 50.35%;
 }
 
 .up-arrow{
@@ -299,10 +299,102 @@
   z-index: 6;
 }
 
-.bottom h1{
-  margin-top: 170px;
+.bottom-main-text{
+  margin-top: 15vh;
   font-family: 'Poppins', sans-serif;
   color: white;
   text-align: center;
+  position: relative;
+  
 }
+.top-box{
+  border: solid red;
+  transition: 2s;
+
+}
+.bottom-banners{
+  display: flex;
+  
+}
+
+.bottom-banners a{
+  text-decoration: none;
+}
+
+.bottom-what, .bottom-how{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  border: solid red;
+  height: 75vh;
+  padding-top: 35vh;
+  transition: 1s;
+}
+
+.what-banner{
+  text-align: center;
+  width: 50vw;
+  transition: 1s;
+}
+
+.how-banner{
+  float: right;
+  text-align: center;
+  transition: 1s;
+  width: 50vw;
+  
+}
+
+/*Banner animations start*/
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in-out;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in-out;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.what-banner:hover {
+  width: 100vw;
+}
+
+.what-banner:hover .bottom-what{
+  font-size: 50px;
+}
+
+.how-banner:hover {
+  width: 100vw;
+}
+
+.how-banner:hover .bottom-how{
+  font-size: 50px;
+}
+
 
