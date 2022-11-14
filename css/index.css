@@ -30,11 +30,6 @@ html {
     src: url(../fonts/Heimdal.ttf) format('truetype');
 }
 
-/*Site exit animation start*/ 
-
-
-/*Site exit animation end*/ 
-
 /* nav bar start*/
 .logo-nav{
     color: rgb(255, 255, 255);
@@ -120,14 +115,13 @@ nav li a:hover{
 
 .logo-header{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: white;
 }
 
 .logo{
-    
     position: relative;
     display: inline-block;
     bottom: -50px;
@@ -184,7 +178,7 @@ header.covered{
     color: white;
     font-family: 'Heimdal', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     background-image: url(../Images/index/index-banner-background.gif);
     background-size: cover;
 
@@ -217,7 +211,7 @@ header.covered{
     }
     100%{
         opacity: 1;
-        line-height: 100px;
+        line-height: 80px;
     }
 }
 

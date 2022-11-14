@@ -321,6 +321,7 @@
 .bottom-banners{
   display: flex;
   flex-flow: row;
+  z-index: 7;
 }
 
 .bottom-banners a{
@@ -414,6 +415,9 @@
   width: 100vw;
 }
 
+.what-banner:hover ~ .background{
+
+}
 .what-banner:hover .bottom-what{
   font-size: 50px;
 }
@@ -449,3 +453,6 @@
   animation: fade-bottom 1s;
   opacity: 1;
 }
+
+/*Banner animations end*/
+
