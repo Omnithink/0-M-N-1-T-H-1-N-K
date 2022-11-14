@@ -1,0 +1,40 @@
+Overall Look and Feel of Omnithink
+===============================
+
+The overall look and feel of Omnithink should be professional, futuristic and modern.
+
+Colours
+========
+For Omnithink, colours expose our personality to the customers and represent that we are futuristic and professional.
+These are our color swatches:
+
+- #000000
+- #b8860b
+- #9400d3	
+- #8a2be2
+- #010214
+Button color:
+- #7296e6
+Button hover color rgb(74, 115, 202):
+- #4a73ca
+Logo hover color:
+- #daa520
+
+Iconography
+===========
+Omnithink's logo is a black and gold Hexagon 
+The logo is simple, stylish and professional, representing the company's values.
+Typography
+==========
+Poppins
+Heimdal
+
+Links
+=====
+Links will not be underlined and should change color when a user hovers over it.
+
+Buttons
+=======
+Buttons will be flat designed and should change color when a user hovers over it. The Omnithink logo changes to gold when the user hovers over it and the other buttons
+change to black.
+

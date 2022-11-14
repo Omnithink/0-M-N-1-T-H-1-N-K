@@ -51,7 +51,7 @@
                 <br>
                 <br>
                 <div class="buttons">
-                    <a href="./pricing.html" class="banner-button">Get started with a demo</a> or <a href="./pricing.html " class="banner-button">Get the full experience</a>
+                    <a href="./demo.html" class="banner-button">Get started with a demo</a> or <a href="./pricing.html " class="banner-button">Get the full experience</a>
                 </div>
                 <!--DownArrow-->
                 <div class="arrow-container">
@@ -77,15 +77,24 @@
     </div>
     <div class="bottom" id="bottom">
         <div class="bottom-banner">
-            <div class="arrow-container">
-                <a class="up-arrow" href="#top"></a>
+            <div class="top-box">
+                <div class="arrow-container">
+                    <a class="up-arrow" href="#top"></a>
+                </div>
+                <h1 class="bottom-main-text">Or find out what OmniThink is all about</h1>
             </div>
-            <div class="text-container">
-                <h1>Or find out what OmniThink is all about</h1>
-                <div class="what-banner"></div>
-                <div class="how-banner"></div>
+            <div class="bottom-banner">
+                <div class="bottom-banners">
+                    <a href="/html/product-w.html" class="what-banner">
+                        <h1 class="bottom-what reveal fade-left">What we do</h1>
+                        <p class="what-description fade-bottom">Learn about our mission statement and our goal.</p>
+                    </a>
+                    <a href="/html/product-h.html" class="how-banner">
+                        <h1 class="bottom-how reveal fade-right">How we do it</h1>
+                        <p class="how-description fade-bottom">Get a look at the engineering behind our AI.</p>
+                    </a> 
+                </div>
             </div>
-            
         </div>
     </div>
 
@@ -93,7 +102,25 @@
 </div>
 
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
 
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                } else {
+                reveals[i].classList.remove("active");
+                }
+            }
+            }
+
+        window.addEventListener("scroll", reveal);
+    </script>
 
 </body>
 </html>
