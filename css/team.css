@@ -10,7 +10,7 @@ html
 
 .column {
     width: 30%;
-    display: inline-block;
+
 }
 
 .card {
@@ -58,7 +58,7 @@ background-color: #555;
 .container{
     width:100%;
     height:100%;
-    position:relative;
+    position:static;
     
 }
 .container video{
@@ -69,12 +69,13 @@ background-color: #555;
 }
 
 .contact {
-    width: 100%;
-    height:100px;
+    display:inline-block;
+    width:100%;
+    margin:auto;
     background-color: antiquewhite;
-    border: 15px black;
-    padding: 50px;
-    margin:20px;
+    padding: 200px;
+
+
 }
 
 .job {
