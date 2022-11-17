@@ -73,21 +73,36 @@ background-color: #555;
     width:100%;
     margin:auto;
     background-color: antiquewhite;
-    padding: 200px;
+    padding: 100px;
 
 
 }
 
 .job {
+    border-radius: 20px;
     margin:auto;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+    outline: none;
     display:block;
     padding: 8px;
     color:black;
     background-color:whitesmoke;
     text-align: center;
-    cursor: pointer;
-    width:30%;
+    width:20%;
     transition: 0.5s;
+    padding: 15px 25px;
+  font-size: 24px;
     }
 
-   
+    button:hover {background-color:blueviolet}
+    .button:active {
+        background-color:beige;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      .job:active {
+        background-color:plum;
+        box-shadow:0 5px #666;
+        transform: translateY(4px);
+      }
