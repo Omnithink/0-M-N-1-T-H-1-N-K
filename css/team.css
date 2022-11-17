@@ -1,72 +1,108 @@
-html {
-    box-sizing: border-box;
-    
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-
-}
+html
 
 .column {
+    float:left;
     width: 20%;
     margin-bottom: 16px;
     padding: 0 8px;
     
 }
-.row {
-    float: left;
-    display: flex;
 
-}
-.column{
-    display: inline;
-    flex: 20%;
-    padding: 10px;
-
-}
-@media screen and (max-width: 200px) {
 .column {
     width: 30%;
-    display: inline-block;
-}
+
 }
 
 .card {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
 }
-
-
 .container {
-padding: 0 16px;
-}
-
-.container::after, .row::after {
-content: "";
-clear: both;
-display: table;
-}
+    padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
 
 .title {
 color: gray;
 font-size: larger;
+text-align: center;
 }
 
 .button {
 border: none;
 outline: 0;
-display: inline-block;
+display:block;
+margin:auto;
 padding: 8px;
 color: white;
 background-color: purple;
 text-align: center;
 cursor: pointer;
-width: 50%;
+width:50%;
 transition: 0.5s;
 }
 
 .button:hover {
 background-color: #555;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    height:100%;
+    position:static;
+    
+}
+.container video{
+    
+  width: 100%;
+  height: 100%;
+    
+}
 
+.contact {
+    display:inline-block;
+    width:100%;
+    margin:auto;
+    background-color: antiquewhite;
+    padding: 100px;
+
+
+}
+
+.job {
+    border-radius: 20px;
+    margin:auto;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+    outline: none;
+    display:block;
+    padding: 8px;
+    color:black;
+    background-color:whitesmoke;
+    text-align: center;
+    width:20%;
+    transition: 0.5s;
+    padding: 15px 25px;
+  font-size: 24px;
+    }
+
+    button:hover {background-color:blueviolet}
+    .button:active {
+        background-color:beige;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      .job:active {
+        background-color:plum;
+        box-shadow:0 5px #666;
+        transform: translateY(4px);
+      }
