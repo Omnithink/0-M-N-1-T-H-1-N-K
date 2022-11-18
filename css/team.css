@@ -10,7 +10,6 @@ html
 
 .column {
     width: 30%;
-
 }
 
 .card {
@@ -106,3 +105,25 @@ background-color: #555;
         box-shadow:0 5px #666;
         transform: translateY(4px);
       }
+      * {box-sizing: border-box}
+
+.container1 {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+top:75%;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  background-color:gold;
+  color:black;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
