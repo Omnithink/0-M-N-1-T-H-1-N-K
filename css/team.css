@@ -47,7 +47,7 @@ transition: 0.5s;
 }
 
 .button:hover {
-background-color: #555;
+background-color:lightgrey;
 }
 *{
     margin: 0;
@@ -94,13 +94,13 @@ background-color: #555;
     padding: 15px 25px;
   font-size: 24px;
     }
-
     button:hover {background-color:blueviolet}
     .button:active {
         background-color:beige;
         box-shadow: 0 5px #666;
         transform: translateY(4px);
       }
+      .job:hover {color:purple}
       .job:active {
         background-color:plum;
         box-shadow:0 5px #666;
