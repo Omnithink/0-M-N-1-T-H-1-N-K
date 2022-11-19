@@ -29,10 +29,12 @@
                 <h2>OmniThink</h2>
             </a>
         </div>
-        <div class="box">
-                    
-        </div>
-        
+        <nav>
+            <ul>
+                <li><a href="./html/team.html">Our team</a></li>
+                <li><a href="./html/contact.html">Contact and support</a></li>
+            </ul>
+        </nav>
         <div class="banners">
             <div class="banner-1" id="banner-1">
                 <h1>What</h1>
@@ -41,13 +43,12 @@
                 <p>We collaborate closely with tech leaders to build new and exciting experiences for our customers</p>
             </div>
             <div class="banner-2" id="banner-2">
-              
-                <h2>Bringing the big picture into focus</h2>
-                <p>We have created a product that resonates with our customer base, while providing our partners with a competitive edge.</p>
+                <h2 class="reveal fade-right">Bringing the big picture into focus</h2>
+                <p class="reveal fade-left">We have created a product that resonates with our customer base, while providing our partners with a competitive edge.</p>
             </div>
             <div class="banner-3" id="banner-3">
-                <h1>Built for professionals and novices alike</h1>
-                <p>
+                <h1 class="reveal fade-top">Built for professionals and novices alike</h1>
+                <p class="reveal fade-bottom">
                     It's greatness at the press of a button. You can jump right into programming with the certitude of getting the best experience possible.
                     Our AI provides peace of mind for the realization of large and minute tasks.
                 </p>
@@ -57,20 +58,22 @@
                         <li>Testing new programs</li>
                         <li>Setting up data and analytics collecting</li>
                     </ul>
-                    <ul>
-                        <li></li>
+                    <ul id="list2">
+                        <li>Creating modeling engines</li>
+                        <li>Learning a new programming language</li>
+                        <li>Organizing large amounts of data</li>
                     </ul>
                 </div>
                 <p id="bottom-text">With tons of user testing and feedback.</p>
             </div>
             <div class="banner-4" id="banner-4">
-                <h1>A stepping stone to greatness</h1>
-                <p>Whether you're working on web developpement, web design, app and applet developpement, or games, OmniThink is the best ressource for your creative endeavors.</p>
+                <h1 class="reveal fade-top">A stepping stone to greatness</h1>
+                <p class="reveal fade-left">Whether you're working on web developpement, web design, app and applet developpement, or games, OmniThink is the best ressource for your creative endeavors.</p>
             </div>
             <div class="banner-5">
                 <h1>Ready to experience OmniThink ?</h1>
                 <div class="banner-button">
-                    <p>Start imagining</p>
+                    <a class="button" href="./html/pricing.html">Start imagining</a>
                 </div>
             </div>
         </div>
@@ -91,11 +94,31 @@
         <div class="how">
             <a href="./product-h.html">
                 <h2>
-                    Check out how we do it
+                    Discover how we do it
                 </h2>
             </a>
             
         </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    } else {
+                    reveals[i].classList.remove("active");
+                    }
+                }
+                }
+
+            window.addEventListener("scroll", reveal);
+        </script>
     </div>
     <div id="fakecontent"></div>
 </body>

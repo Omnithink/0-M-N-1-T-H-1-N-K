@@ -39,33 +39,58 @@ src: url(../fonts/Heimdal.ttf);
 
 /*Content start*/
 
-.video{
-    min-height: 100%;
-    min-width: 100%;
-    z-index: 1;
-    background-repeat: repeat;
-    z-index: 200;
+nav{
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    color: white;
+    
+}
+nav li a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0px 20px;
+    overflow: hidden;
+
+}
+
+nav li a:hover{
+    color:rgb(114, 150, 230);
+    border-bottom: 3px solid white; 
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 #realcontent {
     background-color: rgb(1, 2, 20);
     position: fixed;
     left: 0;
-    width: 4300px;
+    width: 6000px;
     color: #fff;
     height: 100vh;
+    overflow: hidden;
 
 }
   
 #fakecontent {
-    height: 4050px;
+    height: 4700px;
+    overflow: hidden;
 }
 
 .homebutton{
     font-family: 'heimdal', sans-serif;
     position: fixed;
     top: 30px;
-    left: 50px;
+    left: 70px;
     
 }
 
@@ -121,7 +146,10 @@ src: url(../fonts/Heimdal.ttf);
     font-size: 350px;
     position: fixed;
     top: 120px;
-    opacity: 0.4;
+    opacity: 0;
+    animation: fade-left-title 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .banner-1 h2{
@@ -150,7 +178,7 @@ src: url(../fonts/Heimdal.ttf);
     height: 400px;
     top: 200px;
     left: 1200px;
-    padding-right: 25vw;
+    padding-right: 30vw;
     text-align: center;
     justify-content: center;
 
@@ -203,14 +231,20 @@ src: url(../fonts/Heimdal.ttf);
  
 }
 
+.task-list{
+    display: flex;
+}
+
 .banner-3 ul{
     position: relative;
+    padding-top: 20px;
     top: 50px;
     list-style-type: none;
 
 }
 
 .banner-3 li{
+    
     margin-bottom: 20px;
     font-size: 20px;
 }
@@ -218,6 +252,21 @@ src: url(../fonts/Heimdal.ttf);
 #bottom-text{
     position: relative;
     top: 70px;
+}
+
+#list2{
+    position: relative;
+    left: 40px;
+}
+
+.banner-3::after, .banner-3::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    transition: all 0.5s;
 }
 
 .banner-4{
@@ -228,5 +277,147 @@ src: url(../fonts/Heimdal.ttf);
 }
 
 .banner-4 h1{
-
+    font-size: 70px;
 }
+
+.banner-4 p{
+    position: relative;
+    font-size: 30px;
+    top: 20px;
+    font-family: 'Futura lite';
+}
+
+.banner-4::after, .banner-4::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    transition: all 2s;
+}
+.banner-5{
+    position: absolute;
+    top: 200px;
+    left: 4300px;
+    width: 700px;
+}
+
+.banner-5 h1{
+    font-size: 70px;
+}
+
+.banner-5 p{
+    font-size: 20px;
+}
+
+.banner-5::after, .banner-5::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    transition: all 2s;
+}
+
+.button{
+    padding: 9px 35px;
+    background-color: rgb(114, 150, 230);
+    border: none;
+    border-radius: 50px;
+    border-width: 100px;
+    border-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.button{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    top: 50px;
+    color: white
+}
+.button:hover{
+    color: black;
+    background-color: rgb(74, 115, 202) ;
+}
+
+/* Animations */
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  .reveal.active {
+    opacity: 1;
+  }
+  .active.fade-left {
+    animation: fade-left 1s ease-in-out;
+  }
+  .active.fade-right {
+    animation: fade-right 1s ease-in-out;
+  }
+  .active.fade-top {
+    animation: fade-top 1s ease-in-out;
+  }
+  .active.fade-bottom {
+    animation: fade-bottom 1s ease-in-out;
+  }
+  
+
+  @keyframes fade-left-title{
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 0.4;
+    }
+  }
+
+  
+  @keyframes fade-left {
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-right {
+    0% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-bottom {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-top {
+    0% {
+        transform:  translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
