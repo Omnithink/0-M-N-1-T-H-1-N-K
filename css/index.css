@@ -29,7 +29,10 @@ html {
     font-family: "Heimdal";
     src: url(../fonts/Heimdal.ttf) format('truetype');
 }
-
+@font-face {
+    font-family: 'Futura lite';
+    src: url(/fonts/futura/Futura\ Book\ font.ttf);
+}
 /*Site exit animation start*/ 
 
 
@@ -49,15 +52,6 @@ html {
     color: goldenrod;
 }
 
-nav li a {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    list-style-type: none;
-    font-size: 15px;
-    transition: all 0.3s ease 0s;
-}
 
 header{
     position: fixed;
@@ -70,11 +64,63 @@ header{
     z-index: 2;
 }
 
+/* Footer start */
+.footer{
+    position: absolute;
+    bottom: 0;
+    top: 108vh;
+    height: 10vh;
+    width: 100vw;
+    background-color: rgb(4, 4, 5);
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Futura lite';
+
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.copyright{
+    position: absolute;
+    align-items: center;
+    bottom: 35px;
+    left: 30px;
+    color: white;
+}
+.media-elements ul{
+    display: flex;
+    list-style-type: none;
+}
+.media-elements li{
+    padding-right: 20px;
+}
+.media-elements img{
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer end*/ 
+
 nav li{
     display: inline-block;
     padding: 0px 20px;
     overflow: hidden;
 
+}
+
+nav li a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
 }
 
 nav li a:hover{
@@ -168,8 +214,7 @@ header.covered{
 
 /*content start*/
 .content{
-    height: 200vh;
-    background-color:black;
+    height: 115vh;
     margin: 0;
     padding: 0;
 
