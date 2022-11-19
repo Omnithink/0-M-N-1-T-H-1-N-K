@@ -15,7 +15,10 @@
     font-family: "iconfont";
     src: url(../fonts/iconfont.ttf) format('truetype');
 }
-
+@font-face {
+    font-family: 'Futura lite';
+    src: url(/fonts/futura/Futura\ Book\ font.ttf);
+}
 
 /* font */
 
@@ -41,6 +44,14 @@
     --header-animation-jump-height: -2px;
 }
 
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .example {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
 html {
     font-size: 14px;
 }
@@ -61,6 +72,61 @@ html, body, ul, li {
 ul, li {
     list-style: none;
 }
+  /* Footer start */
+  .footer{
+    position: absolute;
+    bottom: 0;
+    top: 93vh;
+    height: 90px;
+    width: 100vw;
+    padding-bottom: 30px;
+    background-color: rgb(4, 4, 5);
+    z-index: 7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Futura lite';
+  
+  }
+  
+  .footer a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    position: relative;
+    bottom: -22px;
+  }
+  
+  .copyright{
+    position: absolute;
+    align-items: center;
+    bottom: 35px;
+    left: 30px;
+    color: white;
+  }
+  .media-elements ul{
+    display: flex;
+    list-style-type: none;
+  }
+  .media-elements li{
+    padding-right: 20px;
+
+    
+  }
+  .media-elements img{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .media-elements a:hover{
+    color: goldenrod;
+  }
+
+  .text{
+    position: relative;
+    top: 25px;
+  }
+  /* Footer end */
 .video-box {
     position: absolute;
     top: 0;

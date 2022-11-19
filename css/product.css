@@ -36,6 +36,10 @@
     font-family: "Heimdal";
     src: url(../fonts/Heimdal.ttf);
   }
+  @font-face {
+    font-family: 'Futura lite';
+    src: url(/fonts/futura/Futura\ Book\ font.ttf);
+}
   @import url('https://unpkg.com/open-props');
   @import url('https://unpkg.com/open-props/normalize.min.css');
 
@@ -90,7 +94,53 @@
   }
   
   /*nav bar end*/
+  /* Footer start */
+.footer{
+  position: absolute;
+  bottom: 0;
+  top: 190vh;
+  height: 10vh;
+  width: 100vw;
+  background-color: rgb(4, 4, 5);
+  z-index: 7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Futura lite';
+
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s;
+}
+
+.copyright{
+  position: absolute;
+  align-items: center;
+  bottom: 35px;
+  left: 30px;
+  color: white;
+}
+.media-elements ul{
+  display: flex;
+  list-style-type: none;
+}
+.media-elements li{
+  padding-right: 20px;
   
+}
+.media-elements img{
+  width: 30px;
+  height: 30px;
+}
+
+.media-elements a:hover{
+  color: goldenrod;
+}
+
+ /* Footer end */
   
   /* Scroll shrink*/
   header{

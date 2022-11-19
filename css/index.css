@@ -83,6 +83,7 @@ header{
 .footer a{
     text-decoration: none;
     color: white;
+    transition: all 0.5s;
 }
 
 .copyright{
@@ -103,6 +104,11 @@ header{
     width: 30px;
     height: 30px;
 }
+
+.media-elements a:hover{
+    color: goldenrod;
+  }
+    
 
 /* Footer end*/ 
 
