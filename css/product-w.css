@@ -1,0 +1,54 @@
+*,*::before , *::after{
+    box-sizing: border-box;
+
+  }
+  
+*{
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+background-color: rgb(1, 2, 20);
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+.example {
+-ms-overflow-style: none;  
+scrollbar-width: none;  
+}
+
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@font-face {
+font-family: "Heimdal";
+src: url(../fonts/Heimdal.ttf);
+}
+@import url('https://unpkg.com/open-props');
+@import url('https://unpkg.com/open-props/normalize.min.css');
+
+/*Content start*/
+body{
+    background-color: #333;
+}
+
+#realcontent {
+    background-color: #333;
+    position: fixed;
+    top: 5px;
+    left: 0;
+    width: 2000px;
+    color: #fff;
+    height: 100px;
+}
+  
+#fakecontent {
+    height: 2000px;
+}
+
