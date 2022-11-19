@@ -196,11 +196,11 @@ ul, li {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    gap: 3rem;
+    gap: 2rem;
     text-align: center;
 }
 .info-block-item {
-    padding: 2rem 0;
+    padding: 4rem 0;
     cursor: default;
 }
 .info-block-item:first-child {
