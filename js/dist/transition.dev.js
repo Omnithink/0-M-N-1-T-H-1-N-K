@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function () {
-  var anchors = document.querySelectorAll('header, .banner-button');
+  var anchors = document.querySelectorAll('header, .banner-button, .nav-item');
   var transition_el = document.querySelector('.transition');
   setTimeout(function () {
     transition_el.classList.remove('is-active');

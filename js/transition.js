@@ -1,5 +1,5 @@
 window.onload = () => {
-    const anchors = document.querySelectorAll('header, .banner-button');
+    const anchors = document.querySelectorAll('header, .banner-button, .nav-item');
     
     const transition_el = document.querySelector('.transition');
   
