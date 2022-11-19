@@ -51,14 +51,14 @@ src: url(../fonts/Heimdal.ttf);
     background-color: rgb(1, 2, 20);
     position: fixed;
     left: 0;
-    width: 3300px;
+    width: 4300px;
     color: #fff;
     height: 100vh;
 
 }
   
 #fakecontent {
-    height: 3050px;
+    height: 4050px;
 }
 
 .homebutton{
@@ -146,20 +146,20 @@ src: url(../fonts/Heimdal.ttf);
 }
 
 .banner-2{
-    position: relative;
+    position: absolute;
     height: 400px;
-    width: 1000px;
     top: 200px;
-    left: 0px;
+    left: 1200px;
     padding-right: 25vw;
     text-align: center;
-  
-    
+    justify-content: center;
+
 }
 
 .banner-2 h2{
     position: relative;
     font-size: 50px;
+    width: 500px;
 }
 
 .banner-2 p{
@@ -167,6 +167,7 @@ src: url(../fonts/Heimdal.ttf);
     top: 50px;
     font-size: 30px;
     font-family: 'futura lite', sans-serif;
+    width: 500px;
 }
 
 
@@ -178,4 +179,54 @@ src: url(../fonts/Heimdal.ttf);
     bottom: 30px;
     left: 30px;
     transition: all 0.5s;
+}
+
+.banner-3{
+    position: absolute;
+    height: 400px;
+    width: 1000px;
+    top: 100px;
+    left: 2000px;
+    padding-right: 25vw;
+
+}
+
+.banner-3 h1{
+    font-size: 70px;
+}
+
+.banner-3 p{
+    font-family: 'futura lite';
+    font-size: 30px;
+    position: relative;
+    top: 30px;
+ 
+}
+
+.banner-3 ul{
+    position: relative;
+    top: 50px;
+    list-style-type: none;
+
+}
+
+.banner-3 li{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#bottom-text{
+    position: relative;
+    top: 70px;
+}
+
+.banner-4{
+    position: absolute;
+    left: 3300px;
+    top: 200px;
+    width: 600px;
+}
+
+.banner-4 h1{
+
 }
