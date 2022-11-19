@@ -182,7 +182,7 @@ ul, li {
 }
 
 .content-box {
-
+    width: 100%;
 }
 .offset-box {
     width: 80%;
