@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/product-h.css">
+    <link rel="stylesheet" href="../css/transitions.css">
+    <link rel="stylesheet" href="../css/extra.css">
+    <link rel="icon" href="../Images/index/android-chrome-512x512.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(window).on('scroll', function() {
+        $("#realcontent").css("left", -$(window).scrollTop());
+        });
+    </script>
+    
+    <title>OmniThink | What we do</title>
+</head>
+<body>
+    <!--Transition element-->
+    <div class="transition transition-2 is-active"></div>
+    <script src="../js/transition.js"></script>
+
+    <div id="realcontent">
+
+        <div class="homebutton">
+            <a href="../index.html">
+                <h2>OmniThink</h2>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./html/team.html">Our team</a></li>
+                <li><a href="./html/contact.html">Contact and support</a></li>
+            </ul>
+        </nav>
+        <div class="banners">
+            <div class="banner-1" id="banner-1">
+                <h1>How</h1>
+                <h2>How we do it</h2>
+                <p>Our neural network is powered by machine learning, model training, and tons of user testing.</p>
+            </div>
+
+            <div class="banner-3" id="banner-3">
+                <h1 class="reveal fade-top">The brain behind the machine</h1>
+                <p class="reveal fade-bottom">
+                    Data goes in, is analyzed, categorized, and served back to the user according to their needs.</p>
+                <p class="reveal fade-bottom">OmniThink is trained to recognize over a billion patterns of code and can produce anything from HTML to Javascript to Caml.</p>
+                
+            </div>
+            <div class="banner-4" id="banner-4">
+                <h1 class="reveal fade-top">UX and UI</h1>
+                <p class="reveal fade-left">All of this would of course be unpalettable without being accessible to the average user.</p>
+                <p class="reveal fade-left">Which is why our design team has put their all into providing the most appealing visual and technical experience to our users and partners.</p>
+            </div>
+            <div class="banner-5">
+                <h1>Ready to experience OmniThink ?</h1>
+                <div class="banner-button">
+                    <a class="button" href="./html/pricing.html">Start imagining</a>
+                </div>
+            </div>
+        </div>
+        <div class="colors">
+            <div class="purple" id="color"></div>
+            <div class="medium-blue" id="color"></div>
+            <div class="light-blue" id="color"></div>
+            <div class="red" id="color"></div>
+            <div class="orange" id="color"></div>
+            <div class="yellow" id="color"></div>
+            <div class="cyan" id="color"></div>
+            <div class="light-green" id="color"></div>
+            <div class="lime" id="color"></div>
+            <div class="magenta" id="color"></div>
+            <div class="lightish-red" id="color"></div>
+            <div class="pink" id="color"></div>
+        </div>
+        <div class="how">
+            <a href="./product-h.html">
+                <h2>
+                    Discover what we do
+                </h2>
+            </a>
+            
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+
+                    if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    } else {
+                    reveals[i].classList.remove("active");
+                    }
+                }
+                }
+
+            window.addEventListener("scroll", reveal);
+        </script>
+    </div>
+    <div id="fakecontent"></div>
+</body>
+</html>
