@@ -82,7 +82,7 @@
     }
       
     #fakecontent {
-        height: 4700px;
+        height: 4300px;
         overflow: hidden;
     }
     
@@ -213,8 +213,8 @@
         position: absolute;
         height: 400px;
         width: 1000px;
-        top: 100px;
-        left: 2000px;
+        top: 200px;
+        left: 1500px;
         padding-right: 25vw;
     
     }
@@ -231,34 +231,6 @@
      
     }
     
-    .task-list{
-        display: flex;
-    }
-    
-    .banner-3 ul{
-        position: relative;
-        padding-top: 20px;
-        top: 50px;
-        list-style-type: none;
-    
-    }
-    
-    .banner-3 li{
-        
-        margin-bottom: 20px;
-        font-size: 20px;
-    }
-    
-    #bottom-text{
-        position: relative;
-        top: 70px;
-    }
-    
-    #list2{
-        position: relative;
-        left: 40px;
-    }
-    
     .banner-3::after, .banner-3::before{
         content: '';
         position: absolute;
@@ -271,7 +243,7 @@
     
     .banner-4{
         position: absolute;
-        left: 3300px;
+        left: 3000px;
         top: 200px;
         width: 600px;
     }
@@ -299,7 +271,7 @@
     .banner-5{
         position: absolute;
         top: 200px;
-        left: 4300px;
+        left: 4000px;
         width: 700px;
     }
     
