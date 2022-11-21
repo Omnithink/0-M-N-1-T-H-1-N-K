@@ -168,7 +168,7 @@ ul, li {
 }
 .page-core {
     width: 95%;
-    max-width: 1200px;
+    max-width: 2000px;
     margin: auto;
 }
 /*separate menu logo and navigation bar */
@@ -180,12 +180,13 @@ ul, li {
 }
 .nav-wrapper, .nav-box {
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
 }
 .nav-item a {
     text-decoration: none;
     color: var(--text-color);
     text-shadow: 4px 4px 6px var(--text-shadow-color);
+    white-space: nowrap;
 }
 .nav-item a:hover{
     color: white;
@@ -222,9 +223,10 @@ ul, li {
     background-color: var(--main-color-3);
     padding: 0.7rem 1.7rem;
     color: white;
-    border-radius: 27px;
+    border-radius: 29px;
     text-decoration: none;
     transition: background-color 1s;
+    white-space: nowrap;
 }
 .imagining-box a:hover {
     background-color: var(--main-color-4);
@@ -252,10 +254,11 @@ ul, li {
 }
 .offset-box {
     width: 80%;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: center;
+    gap: 17rem;
+    margin-left: 18rem;
 }
 
 .info-block-box {
